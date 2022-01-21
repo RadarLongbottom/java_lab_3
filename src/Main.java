@@ -19,5 +19,28 @@ public class Main {
             e) wywołać metody suma i róznica (obie wersje) z klasy punkt
         */
 
+        Punkt punktA = new Punkt(17, 25, 37);
+        System.out.println(punktA.toString());
+
+        Punkt punktB = new Punkt(7, 15, 34);
+        System.out.println(punktB.toString());
+
+        punktA.setpX(17);
+        punktA.setpY(25);
+        punktA.setpZ(37);
+        System.out.println(punktA.toString());
+
+        punktA.getpX();
+        punktA.getpY();
+        punktA.getpZ();
+        System.out.println(punktA.toString());
+
+        punktA.show();
+        punktA.show1();
+        punktA.show2();
+        punktA.show3();
+
+
+
     }
 }
