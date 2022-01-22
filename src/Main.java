@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -27,6 +29,15 @@ public class Main {
             b) dodać studentów do Listy ArrayList,
             c) przeiterować listę za pomocą pętli forEach wywołując na każdym objekcie metodę toString() (w każdej iteracji);
          */
+        ArrayList<Student> studenci = new ArrayList<>();
+        studenci.add(new Student( new Osoba("Aleksander", "Skierka", 60726), WydziałEnum.Informatyczny));
+        studenci.add(new Student( new Osoba("Michał", "Karolak", 66325), WydziałEnum.Filologiczny));
+        studenci.add(new Student( new Osoba("Katarzyna", "Stark", 70666), WydziałEnum.Filologiczny));
+        studenci.add(new Student( new Osoba("Julita", "Raskolnikow", 59426), WydziałEnum.Nawigacyjny));
+        studenci.add(new Student( new Osoba("Krzysztof", "Nowak", 42506), WydziałEnum.Matematyczny));
 
+        for (Student student:studenci){
+            System.out.println(student.toString());
+        }
     }
 }
